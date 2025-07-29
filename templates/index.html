@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Password Generator</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #f8f8f8;
+            font-family: sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+        .output {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #00ff88;
+        }
+    </style>
+</head>
+<body>
+    <h1>AI-Based Password Generator</h1>
+    <form method="POST">
+        <input type="date" name="dob" required><br>
+        <input type="text" name="favorite" placeholder="Favorite word" required><br>
+        <button type="submit">Generate Password</button>
+    </form>
+    {% if password %}
+    <div class="output">
+        Generated Password: <strong>{{ password }}</strong>
+    </div>
+    {% endif %}
+</body>
+</html>
+
+    
